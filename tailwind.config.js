@@ -7,13 +7,18 @@ module.exports = {
 
   // daisyUI config (optional)
   daisyui: {
-    styled: true,
-    themes: true,
-    base: true,
-    utils: true,
-    logs: true,
-    rtl: false,
-    prefix: "",
-    darkTheme: "light",
+    themes: [
+      {
+        mytheme: {
+          primary: "#16a34a",
+          neutral: "#3b82f6",
+          accent: "#2563eb",
+          secondary: "#7c3aed",
+          "base-100": "#ffffff",
+        },
+      },
+      "light",
+      "cupcake",
+    ],
   },
 }
